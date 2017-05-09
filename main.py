@@ -14,7 +14,7 @@ tree = lxml.html.fromstring(page_request.text)
 
 forecast_text_sel = CSSSelector('.wfCurrentContent > strong')
 current_temp_sel = CSSSelector('.wfCurrentTemp')
-wind_sel = CSSSelector('.wfCurrentWind.windImgW')
+wind_sel = CSSSelector('.wfCurrentWind')
 detailed_stats_sel = CSSSelector('.wfNonCurrentValue')
 
 forecast_text = forecast_text_sel(tree)[0].text
